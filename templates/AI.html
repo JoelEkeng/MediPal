@@ -17,14 +17,6 @@
 <body>
 
     <div class="main-container">
-        <!-- <div class="sidebar"> -->
-        <!-- <h2>Dr. Wellnessa's Tip of the Day</h2> -->
-        <!-- Placeholder where the tip of the day will be dynamically loaded -->
-        <!-- <div class="tip-of-the-day-content" id="tip-of-the-day-content"> -->
-        <!-- Tip of the day will be inserted here from the database -->
-        <!-- </div> -->
-        <!-- </div> -->
-
         <div class="chat-container">
             <div class="chat-header">Chat with Dr. Wellnessa</div>
             <div class="chat-messages" id="chat-messages"></div>
@@ -35,18 +27,85 @@
         </div>
     </div>
 
+    // Import the Botpress WebChat JavaScript file
     <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 
+    // Initialize the Botpress WebChat with the required parameters
+    <script>
+        window.botpressWebChat.init({
+            // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+            "botId": "ef762161-efde-4452-9938-54875754b4c1",
+            "clientId": "ef762161-efde-4452-9938-54875754b4c1",
 
-    window.botpressWebChat.init({ // Replace
-    <your-bot-id> and
-        <your-client-id> with your actual bot and client IDs "botId": "ef762161-efde-4452-9938-54875754b4c1", "clientId": "ef762161-efde-4452-9938-54875754b4c1", // Set the URL for the Botpress WebChat JavaScript file and the messaging server "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-            "messagingUrl": "https://messaging.botpress.cloud", // Set the name of the bot that will be displayed in the WebChat interface "botName": "Test", // Set the width of the WebChat container and layout to 100% (Full Screen) "containerWidth":
-            "100%25", "layoutWidth": "100%25", // Hide the widget and disable animations "hideWidget": true, "disableAnimations": true, }); // Opens up the Chatbot by default // This lets users start chatting with the Chatbot without needing to click
-            any buttons or menus. window.botpressWebChat.onEvent( function () { window.botpressWebChat.sendEvent({ type: "show" }); }, ["LIFECYCLE.LOADED"] );
-            </script>
-            <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-            <script src="https://mediafiles.botpress.cloud/ef762161-efde-4452-9938-54875754b4c1/webchat/config.js" defer></script>
+            // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+            "messagingUrl": "https://messaging.botpress.cloud",
+
+            // Set the name of the bot that will be displayed in the WebChat interface
+            "botName": "Wellnessa",
+
+            // Set the width of the WebChat container and layout to 100% (Full Screen)
+            "containerWidth": "100%25",
+            "layoutWidth": "100%25",
+
+            // Hide the widget and disable animations
+            "hideWidget": true,
+            "disableAnimations": true,
+        });
+
+        // Opens up the Chatbot by default
+        // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+        window.botpressWebChat.onEvent(
+            function() {
+                window.botpressWebChat.sendEvent({
+                    type: "show"
+                });
+            }, ["LIFECYCLE.LOADED"]
+        );
+    </script>
+
+    <!-- Initialize Botpress WebChat -->
+    <script>
+        window.botpressWebChat.init({
+            "composerPlaceholder": "Chat with Wellnessa",
+            "botConversationDescription": "MediPal Assisted AI Care",
+            "webhookId": "a47e65ae-babe-4253-ac82-49a767076e6c",
+            "lazySocket": true,
+            "themeName": "prism",
+
+            "stylesheet": "https://webchat-styler-css.botpress.app/prod/code/12ecabea-9aaf-4374-9a02-1b6ce8afabc5/v27317/style.css",
+            "frontendVersion": "v1",
+            "useSessionStorage": true,
+            "enableConversationDeletion": true,
+            "theme": "prism",
+            "themeColor": "#2563eb",
+            "customStyles": `
+        .webchat-container {
+            width: 1000px; /* Adjust the width as needed */
+        }
+        .webchat-header {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 80px; /* Adjust the height as needed */
+        }
+    `,
+        });
+
+        // Opens up the Chatbot by default
+        document.getElementById('openChatButton').addEventListener('click', function() {
+            // Check if the chat has been initialized
+            if (window.botpressWebChat) {
+                // Open the chat by sending an event to the chat window
+                window.botpressWebChat.sendEvent({
+                    type: 'open'
+                }, 'ef762161-efde-4452-9938-54875754b4c1');
+            }
+        });
+    </script>
+
+    <!-- Include Wellnessa.js -->
+    <script src="/Wellnessa.js" defer></script>
 </body>
 
 </html>
