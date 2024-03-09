@@ -1,0 +1,54 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    background-image: url("/assets/img/hand-medical-glove-pointing-virtual-screen-medical-technology.jpg");
+    background-size: contain;
+}
+
+.container {
+    border-radius: 25px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    opacity: 90%;
+    height: 850px;
+    width: 500px;
+}
+
+input {
+    border-radius: 50px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+}
+
+.prescriptionFormGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.prescriptionFormGroup input {
+    margin: auto;
+    width: 250px;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 180px;
+}
+
+hr {
+    width: 400px;
+    border: 1px solid red;
+}

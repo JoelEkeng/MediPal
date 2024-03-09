@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurements</title>
+    <link href="assets/css/Measurements.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="header">
+
+            <a href="index.html" class="logo me-auto"><img src="assets/img/Medipal.jpg" alt="" class="img-fluid" height="150px"></a>
+
+        </div>
+
+        <div class="measurementforms">
+            <h2>Physical Measurements</h2>
+            <form id="measurements-form">
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" placeholder="Your weight in kg" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" name="age" placeholder="Your age in years" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" placeholder="Your height in cm" required>
+                </div>
+                <div class="form-group">
+                    <label for="blood-type">Blood Type:</label>
+                    <input type="text" id="blood-type" name="blood_type" placeholder="Your blood type" required>
+                </div>
+                <button type="submit">Submit Measurements</button>
+            </form>
+        </div>
+        <hr>
+
+        <div class="prescriptionForm">
+            <h2>Prescription Management</h2>
+            <form id="prescriptionForm">
+                <div class="prescriptionFormGroup">
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" name="patientName" required>
+                </div>
+                <div class="prescriptionFormGroup">
+                    <label for="medication">Medication:</label>
+                    <input type="text" id="medication" name="medication" required>
+                </div>
+                <div class="prescriptionFormGroup">
+                    <label for="dosage">Dosage:</label>
+                    <input type="text" id="dosage" name="dosage" required>
+                </div>
+                <div class="prescriptionFormGroup">
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="3" required></textarea>
+                </div><br>
+                <button type="submit">Prescribe Medication</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

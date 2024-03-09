@@ -1,0 +1,144 @@
+    body {
+        font-family: "Open Sans", sans-serif;
+        color: #444444;
+        background-image: url(../img/medium-shot-person-wearing-protection-suit.jpg);
+        background-size: cover;
+        background-position: inherit;
+        text-align: center;
+    }
+    
+    a {
+        color: #cc1919;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+    
+    hr {
+        margin-top: 30px;
+    }
+    
+    .container {
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 5%;
+        height: 550px;
+        width: 250px;
+        margin: auto;
+        margin-top: 60px;
+        opacity: 90%;
+    }
+    
+    .loginDetails,
+    .signupDetails {
+        text-align: center;
+    }
+    
+    .loginDetails .Loginform,
+    .signUp .Loginform {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .loginBtn {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    input,
+    button {
+        border-radius: 50px;
+        border-color: #cc1919;
+        height: 30px;
+    }
+    
+    input::placeholder {
+        text-align: center;
+        text-justify: inter-cluster;
+    }
+    
+    button:first-child:hover,
+    button:first-child:checked {
+        background-color: green;
+    }
+    
+    button:hover {
+        background-color: #cc1919;
+        color: white;
+    }
+    
+    .signUPContainer {
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 5%;
+        height: 450px;
+        width: 750px;
+        margin: auto;
+        margin-top: 130px;
+        opacity: 90%;
+    }
+    
+    .signupHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .signupHeader img {
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .signupDetails .signUp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .signupDetails .signUp {
+        margin-top: 30px;
+    }
+    
+    .signUp .signUpOption button {
+        position: relative;
+        top: 60px;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 40px;
+    }
+    
+    .signupForm {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .signupForm input {
+        width: 200px;
+    }
+    
+    .signUpsubmitButton {
+        margin-top: 50px;
+        width: 250px;
+    }
+    
+    .vertical-line {
+        border-left: 1px solid #1710e1;
+        height: 200px;
+        margin: 0 40px;
+    }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/Login.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <main class="signUPContainer">
+        <div class="signupDetails">
+
+            <div class="signupHeader">
+                <img src="assets/img/Medipal.jpg" height="150px">
+                <h2>Welcome to MediPal</h2>
+            </div>
+
+
+            <div class="signUp">
+                <div class="signUpOption">
+                    <button id="SignUp"><i class="fa-solid fa-user"></i>  Sign Up with Email or Phone</button>
+                    <button><i class="fa-brands fa-google"></i>  Continue with Google</button>
+                </div>
+
+                <div class="vertical-line"></div>
+
+                <form style="display: none">
+                    <div class="signupForm">
+                        <div class="Loginform">
+                            <label>First Name:</label>
+                            <input type="text" name="FirstName" placeholder="FirstName">
+                        </div>
+                        <div class="Loginform">
+                            <label>Last Name:</label>
+                            <input type="email" name="LastName" placeholder="LastName">
+                        </div>
+                    </div>
+
+                    <div class="signupForm">
+                        <div class="Loginform">
+                            <label>Phone Number:</label>
+                            <input type="tel" name="phoneNumber" placeholder="PhoneNumber without +">
+                        </div>
+
+                        <div class="Loginform">
+                            <label>E-mail:</label>
+                            <input type="email" name="Email" placeholder="E-mail Address">
+                        </div>
+                    </div>
+
+                    <div class="signupForm">
+                        <div class="Loginform">
+                            <label>Password:</label>
+                            <input type="password" name="Password" placeholder="Password">
+                        </div>
+
+                        <div class="Loginform">
+                            <label>Re-enter Password:</label>
+                            <input type="password" name="Re-enterPasswrod" placeholder="Re-enter Password">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="signUpsubmitButton" onclick="validateForm()">Sign Up</button>
+                </form>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="footer">
+            <p>Already have an account?
+                <a href="Login.html" style="color:red">Log In</a>
+            </p>
+        </div>
+
+        <script src="assets/js/Login.js"></script>
+    </main>
+</body>
+
+</html>

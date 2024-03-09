@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Wellnessa Chat Interface</title>
+    <link href="assets/css/AI.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- <div class="sidebar"> -->
+        <!-- <h2>Dr. Wellnessa's Tip of the Day</h2> -->
+        <!-- Placeholder where the tip of the day will be dynamically loaded -->
+        <!-- <div class="tip-of-the-day-content" id="tip-of-the-day-content"> -->
+        <!-- Tip of the day will be inserted here from the database -->
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <div class="chat-container">
+            <div class="chat-header">Chat with Dr. Wellnessa</div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <form class="chat-form" id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+
+    window.botpressWebChat.init({ // Replace
+    <your-bot-id> and
+        <your-client-id> with your actual bot and client IDs "botId": "ef762161-efde-4452-9938-54875754b4c1", "clientId": "ef762161-efde-4452-9938-54875754b4c1", // Set the URL for the Botpress WebChat JavaScript file and the messaging server "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+            "messagingUrl": "https://messaging.botpress.cloud", // Set the name of the bot that will be displayed in the WebChat interface "botName": "Test", // Set the width of the WebChat container and layout to 100% (Full Screen) "containerWidth":
+            "100%25", "layoutWidth": "100%25", // Hide the widget and disable animations "hideWidget": true, "disableAnimations": true, }); // Opens up the Chatbot by default // This lets users start chatting with the Chatbot without needing to click
+            any buttons or menus. window.botpressWebChat.onEvent( function () { window.botpressWebChat.sendEvent({ type: "show" }); }, ["LIFECYCLE.LOADED"] );
+            </script>
+            <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/ef762161-efde-4452-9938-54875754b4c1/webchat/config.js" defer></script>
+</body>
+
+</html>
