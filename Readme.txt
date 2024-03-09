@@ -22,34 +22,34 @@ MediPal aims to provide users with a user-friendly interface that offers valuabl
 
 ## Features
 
-### 1. **Health Tips**
+### 1. Health Tips
 
-- **Daily Tips:** Receive daily health tips to enhance your well-being.
-- **Informative Content:** Tips cover various topics, including nutrition, fitness, and general health.
+- Daily Tips: Receive daily health tips to enhance your well-being.
+- Informative Content: Tips cover various topics, including nutrition, fitness, and general health.
 
-### 2. **Appointment Tracker**
+### 2. Appointment Tracker
 
-- **User-Friendly Interface:** Easily manage and track your medical appointments.
-- **Appointment Reminders:** Stay organized with reminders for upcoming appointments.
+- User-Friendly Interface: Easily manage and track your medical appointments.
+- Appointment Reminders: Stay organized with reminders for upcoming appointments.
 
-### 3. **Footer Newsletter**
+### 3. Footer Newsletter
 
-- **Newsletter Subscription:** Subscribe to the newsletter for monthly health tips.
-- **Simple Subscription Form:** Quick and easy form for subscribing to newsletters.
+- Newsletter Subscription: Subscribe to the newsletter for monthly health tips.
+- Simple Subscription Form: Quick and easy form for subscribing to newsletters.
 
 ## Getting Started
 
 To get started with MediPal, follow these steps:
 
-1. **Clone the Repository:**
+1. Clone the Repository:
    ```bash
    git clone https://github.com/your-username/medipal.git
    ```
 
-2. **Open `index.html` in a Browser:**
+2. Open `index.html` in a Browser:
    - Open the `index.html` file in your preferred web browser.
 
-3. **Explore the Features:**
+3. Explore the Features:
    - Navigate through the application and explore the health tips, appointment tracker, and newsletter subscription features.
 
 ## Health Tips

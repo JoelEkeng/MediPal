@@ -8,10 +8,11 @@ body {
 .container {
     border-radius: 25px;
     margin: auto;
+    margin-top: 50px;
     text-align: center;
     background-color: white;
     opacity: 90%;
-    height: 850px;
+    height: 750px;
     width: 500px;
 }
 
@@ -36,19 +37,4 @@ textarea {
 .prescriptionFormGroup input {
     margin: auto;
     width: 250px;
-}
-
-button {
-    margin: auto;
-    margin-bottom: 15px;
-    border-radius: 50px;
-    background-color: red;
-    color: white;
-    height: 30px;
-    width: 180px;
-}
-
-hr {
-    width: 400px;
-    border: 1px solid red;
 }

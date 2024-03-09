@@ -60,6 +60,18 @@
         gap: 10px;
     }
     
+    label {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    select {
+        width: 210px;
+        height: 30px;
+        border-radius: 50px;
+        border-color: #cc1919;
+    }
+    
     input,
     button {
         border-radius: 50px;
@@ -110,10 +122,6 @@
         justify-content: space-around;
     }
     
-    .signupDetails .signUp {
-        margin-top: 30px;
-    }
-    
     .signUp .signUpOption button {
         position: relative;
         top: 60px;
@@ -125,7 +133,7 @@
     .signupForm {
         display: flex;
         flex-direction: row;
-        gap: 15px;
+        gap: 20px;
     }
     
     .signupForm input {
@@ -133,12 +141,12 @@
     }
     
     .signUpsubmitButton {
-        margin-top: 50px;
+        margin-top: 20px;
         width: 250px;
     }
     
     .vertical-line {
         border-left: 1px solid #1710e1;
-        height: 200px;
+        height: 300px;
         margin: 0 40px;
     }
